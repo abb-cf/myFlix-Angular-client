@@ -10,5 +10,9 @@ import { MovieCardComponent } from './movie-card/movie-card.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'myFlix-Angular-client';
+  title = "myFlix-Angular-client";
+
+  toolbarVisible(): string | null {
+    return localStorage.getItem("user");
+  }
 }
